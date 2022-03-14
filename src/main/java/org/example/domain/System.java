@@ -1,9 +1,9 @@
 package org.example.domain;
 
 public class System {
-  private int unusedField = 42;
+  private final long unusedField = 42L;
 
-  static long getValue() {
-    return 42L;
+  long getValue() {
+    return unusedField;
   }
 }
